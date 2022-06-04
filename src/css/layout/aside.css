@@ -1,0 +1,149 @@
+#aside {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aside button {
+    margin: 10px 0;
+    height: 50px;
+    width: 150px;
+    background-color: hsla(0, 0%, 100%, 0.445);
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+}
+
+.pokemonInfo {
+    width: 75%;
+    height: 80%;
+    background-color: hsla(0, 0%, 100%, 0.445);
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+    "img img img"
+    "type type type"
+    "moves moves moves"
+    "abilities abilities abilities";
+    grid-template-rows: 400px auto auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.pokemonInfo figure {
+    color: black;
+    font-size: 0.9rem;
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pokemonInfo figure img {
+    width: 75%;
+    height: 75%;
+}
+
+.pokemonInfo figure figcaption {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.pokemonInfo details ul {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.pokemonInfo details {
+    margin: 5px auto;
+    padding-left: 5%;
+    width: 75%;
+    padding-top: 8px;
+}
+
+.pokemonInfo h2 {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
+.pokemonInfo details  summary {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.pokemonInfo #types {
+    grid-area: type;
+}
+
+.pokemonInfo #moves {
+    grid-area: moves;
+}
+
+.pokemonInfo #abilities {
+    grid-area: abilities;
+}
+
+@media screen and (max-width: 1279px) {
+    .pokemonInfo{
+        grid-template-areas: 
+        "img img img"
+        "type type type"
+        "moves moves moves"
+        "abilities abilities abilities";
+    }
+
+    .pokemonInfo details {
+        width: 60%;
+        padding-left: 5%;
+        font-size: 0.7rem;
+    }
+
+    .pokemonInfo h2 {
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #aside {
+        width: 100%;
+        height: 45%;
+    }
+
+    #aside button {
+        margin-top: 10px;
+    }
+
+    .pokemonInfo figure img {
+        height: 90%;
+        width: 75%;
+    }
+
+    .pokemonInfo {
+        grid-template-rows: 100% auto auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #aside {
+        height: 48vh;
+        width: 100%;
+    }
+
+    .pokemonInfo {
+        grid-template-rows: 100% auto auto;
+    }
+
+    .pokemonInfo figure img {
+        height: 90%;
+        width: 60%;
+    }
+}

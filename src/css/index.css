@@ -1,0 +1,36 @@
+@import url(./layout/list.css);
+@import url(./layout/aside.css);
+@import url(./color/color.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 35%;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: hsla(0, 0%, 100%, 0.445);
+}
+
+header h1 {
+    border-bottom: 1px solid black;
+}
+
+main {
+    display: flex;
+    height: 90vh;
+    flex-wrap: wrap;
+}

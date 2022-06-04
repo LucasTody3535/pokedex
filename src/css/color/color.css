@@ -1,0 +1,19 @@
+:root {
+    --poisonType: #781892;
+    --grassType: #9bcc50;
+    --fireType: #fd7d24;
+    --flying: #40bce2e8;
+    --water: #002df5;
+    --bug: #01830c;
+    --normal: #6e401afa;
+    --electric: #ffff00e3;
+    --ground: #462306;
+    --fairy: #942f76;
+    --fighting: #d3671f;
+    --psychic: #b700ffcb;
+    --rock: #ff9900;
+    --steel: #646464;
+    --ice: #00eeffd7;
+    --ghost: #8c00ffcb;
+    --dragon: #d61010;
+}
